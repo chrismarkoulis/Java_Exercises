@@ -18,7 +18,7 @@ public class LoopsArrays2 {
      */
     public static void main(String[] args) {
 
-        int[] integers = {10, 40, 25, 35, 58};
+        int[] integers = {100, 40, 25, 35, 58};
         int sum = 0;
         for (int i = 0; i < integers.length; i++) {
 
@@ -30,6 +30,31 @@ public class LoopsArrays2 {
         System.out.println("Min value is " + integers[0]);
         System.out.println("Max value is " + integers[integers.length - 1]);
 
+        
+        
+        
+                    int minValue = integers[0];
+
+        for (int i = 0; i < integers.length; i++) {
+            minValue = Math.min(minValue,integers[i]);
+        }
+        
+        System.out.println("The min value is: " + minValue);
+        
+        
+        int maxValue = integers[integers.length-1];
+
+        for (int i = 0; i < integers.length; i++) {
+            maxValue = Math.max(maxValue,integers[i]);
+        }
+        
+        System.out.println("The max value is: " + maxValue);
+        
+        
+        
+        
+        
+        
         double averageValue = sum / (double)integers.length;
         System.out.println("The average value is: " + averageValue);
         
